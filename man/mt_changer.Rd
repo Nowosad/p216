@@ -23,4 +23,10 @@ Nowy plik będzie miał taką samą nazwę z dopiskiem _new
 Ta funkcja zamienia wartości parametrów w wierszach 16, 18, 22, 23
 w folderze zawierającym pliki o rozszerzeniu RDC.
 }
+\examples{
+\donttest{
+   folder <- "C:/Users/jakub/pliki_RDC"
+   mt_changer(folder, "7500.0000000", "0.0000000", "Background")
+}
+}
 

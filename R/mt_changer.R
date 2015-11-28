@@ -13,6 +13,7 @@
 #'
 #' @export
 #'
+#' @examples
 #' \donttest{
 #'    folder <- "C:/Users/jakub/pliki_RDC"
 #'    mt_changer(folder, "7500.0000000", "0.0000000", "Background")

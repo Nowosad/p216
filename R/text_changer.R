@@ -12,6 +12,7 @@
 #' Nowy plik będzie miał taką samą nazwę z dopiskiem _new
 #' @export
 #'
+#' @examples
 #' \donttest{
 #'    file <- "raw_data/przyklady_plikow_dla_temperatury_powierzchni_(LST)/p_mod11a2_a2000065_h18v01_005_2007176171013_lst_day_1km.RDC"
 #'    text_changer(file, "7500.0000000", "0.0000000", "Background")
