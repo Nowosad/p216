@@ -1,9 +1,12 @@
 Package: p216
 Type: Package
 Title: toDo
-Version: 0.1.1
+Version: 0.1.3
 Authors@R: person("Jakub", "Nowosad", email="nowosad@amu.edu.pl", role=c("aut", "cre"))
 Description: toDo
+Imports:
+    assertthat
 License: MIT
 LazyData: TRUE
 RoxygenNote: 5.0.1
+Suggests: testthat

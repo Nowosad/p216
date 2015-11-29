@@ -20,6 +20,10 @@
 #' }
 
 mt_changer <- function(folder_path, t1, t2, t3, ...){
+    assert_that(is.dir(folder_path))
+    assert_that(is.string(t1))
+    assert_that(is.string(t2))
+    assert_that(is.string(t3))
     files <- normalizePath(list.files(folder_path, pattern="*.RDC" , full.names = TRUE))
-    lapply(files, text_changer, t1=t1, t2=t2, t3=t3)
+    x <- lapply(files, text_changer, t1=t1, t2=t2, t3=t3)
 }

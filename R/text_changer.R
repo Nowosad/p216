@@ -19,6 +19,10 @@
 #' }
 
 text_changer <- function(file, t1, t2, t3){
+    assert_that(is.string(file))
+    assert_that(is.string(t1))
+    assert_that(is.string(t2))
+    assert_that(is.string(t3))
     full_path <- normalizePath(file)
     text1 <- readLines(file)
     p_text <- text1[c(16, 18, 22, 23)]
@@ -28,5 +32,8 @@ text_changer <- function(file, t1, t2, t3){
     text2 <- paste0(s_text, ": ", s2)
     text1[c(16, 18, 22, 23)] <- text2
     name <- gsub("^[.]*|[.][^.]*$", "", basename(full_path), perl = TRUE)
-    writeLines(text1, con = paste0(dirname(full_path), "/", name, "_new", ".RDC"), sep = "\n", useBytes = FALSE)
+    new_file <- paste0(dirname(full_path), "/", name, "_new", ".RDC")
+    writeLines(text1, con = new_file, sep = "\n", useBytes = FALSE)
+    print(paste0("Dodano nowy plik ", new_file, " z wybranymi wartościami."))
 }
+
