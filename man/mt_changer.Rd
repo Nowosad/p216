@@ -4,7 +4,7 @@
 \alias{mt_changer}
 \title{Funkcja mt_changer}
 \usage{
-mt_changer(folder_path, ...)
+mt_changer(folder_path, t1, t2, t3, ...)
 }
 \arguments{
 \item{folder_path}{ścieżka do folderu zawierającego pliki RDC}

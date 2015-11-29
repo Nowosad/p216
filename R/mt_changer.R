@@ -19,7 +19,7 @@
 #'    mt_changer(folder, "7500.0000000", "0.0000000", "Background")
 #' }
 
-mt_changer <- function(folder_path, ...){
+mt_changer <- function(folder_path, t1, t2, t3, ...){
     files <- normalizePath(list.files(folder_path, pattern="*.RDC" , full.names = TRUE))
-    lapply(files, text_changer, t1, t2, t3)
+    lapply(files, text_changer, t1=t1, t2=t2, t3=t3)
 }

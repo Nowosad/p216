@@ -25,7 +25,7 @@ text_changer <- function(file, t1, t2, t3){
     s_text <- strsplit(p_text, ":")
     s_text <- lapply(s_text, function(x) x[1])
     s2 <- c(t1, t1, t2, t3)
-    text2 <- paste0(s1, ": ", s2)
+    text2 <- paste0(s_text, ": ", s2)
     text1[c(16, 18, 22, 23)] <- text2
     name <- gsub("^[.]*|[.][^.]*$", "", basename(full_path), perl = TRUE)
     writeLines(text1, con = paste0(dirname(full_path), "/", name, "_new", ".RDC"), sep = "\n", useBytes = FALSE)
