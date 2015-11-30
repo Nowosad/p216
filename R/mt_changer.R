@@ -9,7 +9,7 @@
 #' @param t3 tekst do zastąpienia wartości w wierszu 22
 #'
 #' @return nowe pliki ze zmienionymi wartościami.
-#' Nowy plik będzie miał taką samą nazwę z dopiskiem _new
+#' Nowy plik będzie miał taką samą nazwę w folderze new
 #'
 #' @export
 #'
