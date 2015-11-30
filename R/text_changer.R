@@ -9,7 +9,7 @@
 #' @param t3 tekst do zastąpienia wartości w wierszu 22
 #'
 #' @return nowy plik ze zmienionymi wartościami.
-#' Nowy plik będzie miał taką samą nazwę z dopiskiem _new
+#' Nowy plik będzie miał taką samą nazwę w folderze new
 #' @export
 #'
 #' @examples
@@ -32,8 +32,9 @@ text_changer <- function(file, t1, t2, t3){
     text2 <- paste0(s_text, ": ", s2)
     text1[c(16, 18, 22, 23)] <- text2
     name <- gsub("^[.]*|[.][^.]*$", "", basename(full_path), perl = TRUE)
-    new_file <- paste0(dirname(full_path), "/", name, "_new", ".RDC")
+    new_dir <- paste0(dirname(full_path), "/new/")
+    new_file <- paste0(new_dir, name, ".RDC")
+    ifelse(!dir.exists(new_dir), dir.create(new_dir), FALSE)
     writeLines(text1, con = new_file, sep = "\n", useBytes = FALSE)
     print(paste0("Dodano nowy plik ", new_file, " z wybranymi wartościami."))
 }
-
