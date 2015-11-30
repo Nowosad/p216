@@ -6,5 +6,5 @@ p216
 if (packageVersion("devtools") < 1.6) {
 install.packages("devtools")
 }
-devtools::install_github("nowosad/p216")
+devtools::install_github("nowosad/p216", dependencies=TRUE)
 ```
