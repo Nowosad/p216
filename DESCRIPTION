@@ -1,7 +1,7 @@
 Package: p216
 Type: Package
 Title: Zbiór różnych funkcji
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: person("Jakub", "Nowosad", email="nowosad@amu.edu.pl", role=c("aut", "cre"))
 Description: toDo
 Imports:

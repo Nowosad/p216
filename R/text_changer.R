@@ -6,7 +6,7 @@
 #' @param file ścieżka do pliku RDC
 #' @param t1 tekst do zastąpienia wartości w wierszach 16 i 18
 #' @param t2 tekst do zastąpienia wartości w wierszu 22
-#' @param t3 tekst do zastąpienia wartości w wierszu 22
+#' @param t3 tekst do zastąpienia wartości w wierszu 23
 #'
 #' @return nowy plik ze zmienionymi wartościami.
 #' Nowy plik będzie miał taką samą nazwę w folderze new
