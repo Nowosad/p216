@@ -6,10 +6,10 @@
 #' @param folder_path ścieżka do folderu zawierającego pliki RDC
 #' @param t1 tekst do zastąpienia wartości w wierszach 16 i 18
 #' @param t2 tekst do zastąpienia wartości w wierszu 22
-#' @param t3 tekst do zastąpienia wartości w wierszu 22
+#' @param t3 tekst do zastąpienia wartości w wierszu 23
 #'
 #' @return nowe pliki ze zmienionymi wartościami.
-#' Nowy plik będzie miał taką samą nazwę z dopiskiem _new
+#' Nowy plik będzie miał taką samą nazwę w folderze new
 #'
 #' @export
 #'

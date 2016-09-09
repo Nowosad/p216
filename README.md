@@ -2,9 +2,12 @@
 p216
 ====
 
+[![Build Status](https://travis-ci.org/Nowosad/p216.png?branch=master)](https://travis-ci.org/Nowosad/p216)
+
+Instalacja
+----------
+
 ``` r
-if (packageVersion("devtools") < 1.6) {
-install.packages("devtools")
-}
+# install.packages("devtools")
 devtools::install_github("nowosad/p216")
 ```
